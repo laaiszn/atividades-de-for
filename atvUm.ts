@@ -2,8 +2,7 @@
 // nome: Laís Zanqueta
 let soma = 0
 
-for (let numero = 0; numero <= 50; numero++) {
+for (let numero = 0; numero <=50; numero++) {
   soma = soma + numero
 }
-
-console.log(" A soma dos numeros de 0 a 50")
+console.log(`A soma dos números de 0 a 50`);
