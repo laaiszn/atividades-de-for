@@ -1,5 +1,5 @@
 // atividade 4 – entrada de 10 números, armazenar em vetor, inverter em outro vetor
-// nome: lala [teu nome completo aqui]
+// nome: Laís Zanqueta
 let teclado = require(`prompt-sync`)();
 let numeros: number[] = []
 let invertido: number[] = []

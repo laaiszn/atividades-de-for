@@ -1,5 +1,5 @@
 // atividade 7 – calcular fatorial de n, onde n é fornecido pelo usuário
-// nome: lala [teu nome completo aqui]
+// nome: Laís Zanqueta
 let teclado = require(`prompt-sync`)();
 let n = parseInt(teclado("digite o valor de n:"))
 let fatorial = 1
