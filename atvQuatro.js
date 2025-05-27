@@ -7,7 +7,7 @@ for (var i = 0; i < 10; i++) {
     var numero = parseFloat(teclado("digite o número " + (i + 1) + ":"));
     numeros[i] = numero;
 }
-// inverter usando outro vetor
+
 for (var i = 0; i < 10; i++) {
     invertido[i] = numeros[9 - i];
 }

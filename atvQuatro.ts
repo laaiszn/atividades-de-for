@@ -9,7 +9,7 @@ for (let i = 0; i < 10; i++){
   numeros[i] = numero;
 }
 
-// inverter usando outro vetor
+
 for (let i = 0; i < 10; i++) {
   invertido[i] = numeros[9 - i]
 }
