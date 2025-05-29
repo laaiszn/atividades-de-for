@@ -1,8 +1,9 @@
-// 1 – Calcule a soma de todos os números de 0 ao 50, essa oma deve fazer uso do laço de repetição for.
-// nome: Laís Zanqueta
-let soma = 0
+let teclado = require(`prompt-sync`)();
 
-for (let numero = 0; numero <=50; numero++) {
-  soma = soma + numero
+let soma: number = 0; 
+
+for(let i= 0; i <= 50; i++){
+ 
+    soma += i; 
 }
-console.log(`A soma dos números de 0 a 50`);
+console.log(soma); 

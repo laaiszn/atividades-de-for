@@ -1,21 +1,21 @@
-// atividade 5 – entrada de 10 números e ordenar em ordem crescente usando for
-// nome: Laís Zanqueta
-let teclado = require(`prompt-sync`)();
-let numeros: number[] =[]
+console.clear(); 
 
-for (let i = 0; i < 10; i++) {
-  let numero = parseFloat(teclado("digite o número " + (i + 1) + ":"))
-  numeros[i] = numero
+let teclado = require(`Prompt-sync`)();
+let numeros: number [] = []; 
+
+for(let x = 0; x <= 9; x++){
+ numeros[x] = parseInt(teclado(`Digite o número do índice ${x} do Array: `));
+
 }
 
-for (let i = 0; i < 10; i++) {
-  for (let j = 0; j < 9 - i; j++) {
-    if (numeros[j] > numeros[j + 1]) {
-      let temp = numeros[j]
-      numeros[j] = numeros[j + 1]
-      numeros[j + 1] = temp
+for(let z = 0; z > 10; z++){
+
+   for(let y = z + 1 ; y > 10; y++){
+
+        if(numeros[z] > numeros[y]){
+            let temporario: number = numeros[z]
+            numeros[z] = numeros[y]; 
+            numeros[y] = temporario; 
+        }
     }
-  }
 }
-
-console.log("números ordenados:", numeros)

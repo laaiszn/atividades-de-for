@@ -1,18 +1,17 @@
-// atividade 3 – entrada de 10 números, armazenar num vetor e mostrar o maior número
-// nome: Laís Zanqueta
-let teclado = require(`prompt-sync`)();
-let numeros: number[] = []
-for (let i = 0; i < 10; i++) {
-  let numero = parseFloat(teclado("digite o número " + (i + 1) + ":"))
-  numeros[i] = numero
-}
+ let teclado = require (`prompt-sync`)(); 
 
-let maior = numeros[0]
+let meuArray: number [] = []; 
+let maior: number = 0; 
 
-for (let i = 1; i < 10; i++) {
-  if (numeros[i] > maior) {
-    maior = numeros[i]
+for (let cont = 0; cont <= 9 ; cont++) {
+  meuArray[cont]=parseInt(teclado(`Digite o ${cont +1}º:`));
+
+   }
+for (let x = 0; x < 10; x++){
+
+  if(meuArray[x] > maior ){
+    maior = meuArray[x]; 
   }
 }
 
-console.log("maior número:", maior)
+console.log(maior); 

@@ -1,18 +1,17 @@
-// atividade 4 – entrada de 10 números, armazenar em vetor, inverter em outro vetor
-// nome: Laís Zanqueta
-let teclado = require(`prompt-sync`)();
-let numeros: number[] = []
-let invertido: number[] = []
+let teclado = require(`prompt-sync`)(); 
 
-for (let i = 0; i < 10; i++){
-  let numero = parseFloat(teclado("digite o número " + (i + 1) + " "));
-  numeros[i] = numero;
+let meuArray: number [] = []; 
+let arrayInvertido: number = [] = []; 
+let z: number = 9; 
+
+
+for (let cont = 0; cont <= 9 ; cont++) {
+  meuArray[cont]=parseInt(teclado(`Digite o ${cont +1}º:`));
+
+   }
+for(let x = 0; x < 10; x++){
+    arrayInvertido[z] = meuArray[x]; 
+    z--; 
 }
 
-
-for (let i = 0; i < 10; i++) {
-  invertido[i] = numeros[9 - i]
-}
-
-console.log("vetor original:", numeros);
-console.log("vetor invertido:", invertido);
+console.log(arrayInvertido)
